@@ -65,3 +65,28 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+
+// server.js
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Middleware to parse JSON data from requests
+app.use(express.json());
+app.use(express.static('public')); // Serve static files (HTML, CSS, JS) from "public"
+
+// Endpoint to handle form submission
+app.post('/api/contact', (req, res) => {
+  const { name, email, message } = req.body;
+
+  // You can now use the data, e.g., send it to your email or store it in a database
+  console.log('Contact form data:', { name, email, message });
+
+  // For now, send a response back to the client
+  res.json({ message: 'Message sent successfully!' });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
