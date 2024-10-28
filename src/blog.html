@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabir Mubarak Pattekari - Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            color: #333;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            color: #3b5998;
+            font-weight: bold;
+        }
+        .featured-post {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .featured-post:hover {
+            transform: translateY(-5px);
+        }
+        .post-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+        .post-title {
+            font-size: 1.5em;
+            color: #3b5998;
+            font-weight: bold;
+        }
+        .read-more {
+            color: #3b5998;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #3b5998;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #2d4373;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Sabir Mubarak Pattekari's Blog</h1>
+        <p>Insights, projects, and the journey into web development</p>
+        <div class="social-icons">
+            <a href="https://github.com/SabirPattekari/Personal-Blog" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sabir8" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </div>
+
+    <!-- Featured Blog Post -->
+    <div class="featured-post card">
+        <img src="assets/daynamic.webp" class="card-img-top" alt="Featured Post Image">
+        <div class="card-body">
+            <h2 class="post-title">Creating a Dynamic Rule-Based Application from Scratch</h2>
+            <p class="card-text">A detailed guide on building a 3-tier rule engine application with Abstract Syntax Tree (AST) and a user-friendly interface. Learn how to handle dynamic rule creation, combinations, and user eligibility checks efficiently.</p>
+            <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Recent Blog Posts -->
+    <h3 class="mt-5 mb-4">Recent Posts</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="post-card card">
+                <img src="assets/wether.jpg" class="card-img-top" alt="Weather Monitoring System">
+                <div class="card-body">
+                    <h4 class="post-title">Building a Real-Time Weather Monitoring System</h4>
+                    <p class="card-text">Explore how to build a real-time data processing system with OpenWeatherMap API.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post-card card">
+                <img src="assets/house.jpg" class="card-img-top" alt="Guest House Redesign">
+                <div class="card-body">
+                    <h4 class="post-title">Redesigning the King Sukh Guest House Website</h4>
+                    <p class="card-text">A case study on enhancing user experience and responsiveness in web design.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post-card card">
+                <img src="assets/ecommerce.jpg" class="card-img-top" alt="Men's Jacket">
+                <div class="card-body">
+                    <h4 class="post-title">E-commerce Website</h4>
+                    <p class="card-text">High-quality jacket for a trendy look, perfect for casual outings and winter wear.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>        
+        <div class="col-md-4">
+            <div class="post-card card">
+                <img src="assets/mern.jpg" class="card-img-top" alt="MERN Stack Development">
+                <div class="card-body">
+                    <h4 class="post-title">MERN Stack Development: Getting Started</h4>
+                    <p class="card-text">An introduction to the MERN stack and tips for building your first full-stack app.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
