@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather Monitoring System Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: rgb(99, 99, 164);
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real-Time Weather Monitoring System Documentation</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the Real-Time Weather Monitoring System! This application provides up-to-the-minute weather data from various locations using the OpenWeatherMap API, giving users insights into temperature, humidity, wind speed, and other meteorological factors in real time.</p>
+        </section>
+
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <p>To start using the system, follow these steps:</p>
+            <ul>
+                <li>Create an account on the OpenWeatherMap website and obtain an API key.</li>
+                <li>Log into the Weather Monitoring System and navigate to the <strong>Settings</strong> section.</li>
+                <li>Enter your API key in the designated field and save your settings.</li>
+                <li>Select your desired locations for monitoring and configure any alerts as needed.</li>
+            </ul>
+        </section>
+
+        <section id="live-weather">
+            <h2>Live Weather Dashboard</h2>
+            <p>The Live Weather Dashboard provides real-time weather data for the selected locations. The dashboard displays:</p>
+            <ul>
+                <li><strong>Temperature:</strong> Current temperature in Celsius/Fahrenheit.</li>
+                <li><strong>Humidity:</strong> Current humidity level as a percentage.</li>
+                <li><strong>Wind Speed:</strong> Wind speed in km/h or mph.</li>
+                <li><strong>Pressure:</strong> Atmospheric pressure in hPa.</li>
+                <li><strong>Condition:</strong> A brief description of the weather (e.g., Clear, Rainy, Cloudy).</li>
+            </ul>
+            <p>The data is updated every few seconds to ensure that users have access to the latest information.</p>
+        </section>
+
+        <section id="configuring-alerts">
+            <h2>Configuring Alerts</h2>
+            <p>You can set custom alerts based on specific weather conditions. When these conditions are met, you’ll receive a notification. Follow these steps to configure alerts:</p>
+            <ul>
+                <li>Navigate to the <strong>Alerts</strong> section from the main menu.</li>
+                <li>Select a weather parameter (e.g., temperature, wind speed) and set your desired threshold values.</li>
+                <li>Choose the notification method (email, SMS, or in-app alert).</li>
+                <li>Save the alert configuration.</li>
+            </ul>
+            <p>Once configured, alerts will be triggered if the monitored conditions exceed your specified thresholds.</p>
+        </section>
+
+        <section id="historical-data">
+            <h2>Accessing Historical Data</h2>
+            <p>The system also stores historical weather data, allowing you to view trends over time. Access historical data by:</p>
+            <ul>
+                <li>Clicking on the <strong>History</strong> tab in the main menu.</li>
+                <li>Selecting a date range to retrieve past weather data.</li>
+                <li>Viewing the historical trends, including graphs for temperature, humidity, and wind speed.</li>
+            </ul>
+            <p>This feature is useful for analyzing weather patterns and preparing for seasonal changes.</p>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <h3>What is the data update frequency?</h3>
+            <p>The data updates approximately every 5 seconds to provide real-time accuracy.</p>
+
+            <h3>Can I monitor multiple locations simultaneously?</h3>
+            <p>Yes, you can select multiple locations, and each will have its weather data displayed in the dashboard.</p>
+
+            <h3>What should I do if my API key stops working?</h3>
+            <p>If you experience issues with the API key, log in to OpenWeatherMap, generate a new key, and update it in the <strong>Settings</strong> section of the application.</p>
+
+            <h3>Are there options to export the data?</h3>
+            <p>Yes, historical data can be exported as a CSV file for further analysis.</p>
+        </section>
+    </main>
+</body>
+</html>

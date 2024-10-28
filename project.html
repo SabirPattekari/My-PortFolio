@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <style>
+        /* Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            background-color: #3b5998;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        .project-container {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .project-container h2 {
+            font-size: 2.5em;
+            color: #3b5998;
+            margin-bottom: 10px;
+        }
+        .project-container p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .division {
+            height: 3px;
+            width: 50px;
+            background-color: #3b5998;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        .card {
+            margin: 15px;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-info h3 {
+            color: #3b5998;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .project-info p {
+            color: #666;
+        }
+        .project-link a {
+            color: #3b5998;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+        .project-link a:hover {
+            color: #444;
+        }
+        .btn-more {
+            background-color: #3b5998;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin-top: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-more:hover {
+            background-color: #2e4272;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-button">Home</a>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="project-container container">
+        <h2>My Projects</h2>
+        <p>Explore my recent projects and what I've been working on.</p>
+        <div class="division"></div>
+
+        <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <a href="Ecommerce.html">
+                <div class="card col-md-4">
+                    <img src="assets/ecommerce.jpg" class="card-img-top" alt="Guest House Redesign">
+                    <div class="project-info">
+                        <h3>Ecommerce</h3>
+                        <p>React.js, Node.js, Html, Css, Bootstrap</p>
+                        <div class="project-link">
+                            <a href="https://github.com/SabirPattekari/E-commerce" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://e-commerce-8po2avfhy-sabir-pattekaris-projects.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Rulebased Application.html">
+                <div class="card col-md-4">
+                    <img src="assets/daynamic.webp" class="card-img-top" alt="Rule-based Application">
+                    <div class="project-info">
+                        <h3>Dynamic Rule-based Application</h3>
+                        <p>Customizable rule engine for eligibility checks</p>
+                        <div class="project-link">
+                            <a href="https://github.com/SabirPattekari/rule-engine" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        
+            <!-- Project 2 -->
+            <a href="weather.html">
+                <div class="card col-md-4">
+                    <img src="assets/wether.jpg" class="card-img-top" alt="Real-Time Weather Monitoring System">
+                    <div class="project-info">
+                        <h3>Real-Time Weather Monitoring</h3>
+                        <p>Weather data analysis using OpenWeatherMap API</p>
+                        <div class="project-link">
+                            <a href="#" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>        
+        <a href="#" class="btn-more">See More Projects <i class="fas fa-arrow-right"></i></a>
+    </section>
+</body>
+</html>
